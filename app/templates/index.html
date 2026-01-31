@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Python App • Metrofor</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #1f2933, #111827);
+            color: #f9fafb;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            background: #111827;
+            border: 1px solid #374151;
+            padding: 40px 50px;
+            border-radius: 14px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,.6);
+        }
+        h1 {
+            margin: 0 0 10px;
+            font-size: 28px;
+        }
+        p {
+            margin: 6px 0;
+            color: #d1d5db;
+        }
+        .badge {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 6px 14px;
+            border-radius: 999px;
+            background: #2563eb;
+            color: #fff;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🚀 Python App – Docker & Jenkins</h1>
+        <p>POC de CI/CD com Docker Compose</p>
+        <p><strong>Container:</strong> {{ hostname }}</p>
+        <p><strong>Build:</strong> {{ now }}</p>
+        <div class="badge">Metrofor • POC</div>
+    </div>
+</body>
+</html>

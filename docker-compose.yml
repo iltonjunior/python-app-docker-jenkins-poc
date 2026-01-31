@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  python-app:
+    build: .
+    image: python-app-docker-jenkins-poc:latest
+    container_name: python-app-docker-jenkins-poc
+    restart: always
+
+    ports:
+      - "127.0.0.1:5000:5000"
+
+    networks:
+      - metrofor_net
+
+networks:
+  metrofor_net:
+    external: true
